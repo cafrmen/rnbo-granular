@@ -1,4 +1,7 @@
-# RNBO Webpage Example
+# https://cafrmen.github.io/rnbo-granular/
+
+
+## RNBO Webpage Example
 
 This example shows you how to add dynamic audio to a webpage, using the web export feature of RNBO, part of [Max 8](https://cycling74.com/products/max) made by [Cycling '74](https://cycling74.com).
 
