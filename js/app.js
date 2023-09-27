@@ -136,9 +136,10 @@ function makeSliders(device) {
         let slider = document.createElement("input");
         let text = document.createElement("input");
         let sliderContainer = document.createElement("div");
-        sliderContainer.appendChild(label);
+        sliderContainer.classList.add('slider-container'); // YO
+        // sliderContainer.appendChild(label);
         sliderContainer.appendChild(slider);
-        sliderContainer.appendChild(text);
+        // sliderContainer.appendChild(text);
 
         // Add a name for the label
         label.setAttribute("name", param.name);
@@ -149,7 +150,7 @@ function makeSliders(device) {
         // Make each slider reflect its parameter
         slider.setAttribute("type", "range");
         slider.setAttribute("class", "param-slider");
-        slider.setAttribute("id", param.id);
+        slider.setAttribute("id", param.id); // IMPORTANTE
         slider.setAttribute("name", param.name);
         slider.setAttribute("min", param.min);
         slider.setAttribute("max", param.max);
