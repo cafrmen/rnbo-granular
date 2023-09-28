@@ -168,11 +168,13 @@ function makeSliders(device) {
         // Make each slider control its parameter
         slider.addEventListener("pointerdown", () => {
             isDraggingSlider = true;
+            slider.value = param.value;
+            text.value = param.value.toFixed(1);
         });
         slider.addEventListener("pointerup", () => {
             isDraggingSlider = false;
-            slider.value = param.value;
-            text.value = param.value.toFixed(1);
+            // slider.value = param.value; YO
+            // text.value = param.value.toFixed(1); YO
         });
         slider.addEventListener("input", () => {
             let value = Number.parseFloat(slider.value);
