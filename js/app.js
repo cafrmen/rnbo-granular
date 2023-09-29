@@ -139,7 +139,7 @@ function makeSliders(device) {
         sliderContainer.classList.add('slider-container'); // YO
         // sliderContainer.appendChild(label);
         sliderContainer.appendChild(slider);
-        // sliderContainer.appendChild(text);
+        sliderContainer.appendChild(text); // CHECAR
 
         // Add a name for the label
         label.setAttribute("name", param.name);
@@ -162,7 +162,7 @@ function makeSliders(device) {
         slider.setAttribute("value", param.value);
 
         // Make a settable text input display for the value
-        text.setAttribute("value", param.value.toFixed(1));
+        text.setAttribute("value", param.value.toFixed(3));
         text.setAttribute("type", "text");
 
         // Make each slider control its parameter
@@ -174,7 +174,7 @@ function makeSliders(device) {
         slider.addEventListener("pointerup", () => {
             isDraggingSlider = false;
             // slider.value = param.value; YO
-            // text.value = param.value.toFixed(1); YO
+            text.value = param.value.toFixed(3); //CHECAR
         });
         slider.addEventListener("input", () => {
             let value = Number.parseFloat(slider.value);
