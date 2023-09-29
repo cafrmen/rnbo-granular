@@ -169,7 +169,7 @@ function makeSliders(device) {
         slider.addEventListener("pointerdown", () => {
             isDraggingSlider = true;
             slider.value = param.value;
-            text.value = param.value.toFixed(1);
+            text.value = param.value.toFixed(3);
         });
         slider.addEventListener("pointerup", () => {
             isDraggingSlider = false;
