@@ -79,8 +79,8 @@ h2, em {
 #rnbo-parameter-sliders > div > input:first-of-type {
     flex-grow: 1;
 }
-
-.uno, .dos, .tres, .cuatro, .cinco {
+/* quité el .cinco que son los presets */
+.uno, .dos, .tres, .cuatro {
     display: none;
     visibility: hidden;
     position: fixed;

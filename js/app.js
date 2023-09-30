@@ -139,7 +139,7 @@ function makeSliders(device) {
         sliderContainer.classList.add('slider-container'); // YO
         // sliderContainer.appendChild(label);
         sliderContainer.appendChild(slider);
-        sliderContainer.appendChild(text); // CHECAR
+        // sliderContainer.appendChild(text); // CHECAR
 
         // Add a name for the label
         label.setAttribute("name", param.name);
@@ -168,12 +168,12 @@ function makeSliders(device) {
         // Make each slider control its parameter
         slider.addEventListener("pointerdown", () => {
             isDraggingSlider = true;
-            slider.value = param.value;
+            // slider.value = param.value;
             text.value = param.value.toFixed(3);
         });
         slider.addEventListener("pointerup", () => {
             isDraggingSlider = false;
-            // slider.value = param.value; YO
+            slider.value = param.value; YO
             text.value = param.value.toFixed(3); //CHECAR
         });
         slider.addEventListener("input", () => {
@@ -207,7 +207,7 @@ function makeSliders(device) {
     device.parameterChangeEvent.subscribe(param => {
         if (!isDraggingSlider)
             uiElements[param.id].slider.value = param.value;
-        uiElements[param.id].text.value = param.value.toFixed(1);
+        uiElements[param.id].text.value = param.value.toFixed(3);
     });
 }
 
