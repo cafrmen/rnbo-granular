@@ -281,7 +281,7 @@ function loadPresets(device, patcher) {
     let presetSelect = document.getElementById("preset-select");
     presets.forEach((preset, index) => {
         const option = document.createElement("option");
-        option.innerText = preset.name;
+        option.innerText = 'PLAY GRANULAR'; // preset.name
         option.value = index;
         presetSelect.appendChild(option);
     });
