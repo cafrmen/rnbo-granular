@@ -1,8 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    background-color: #637373;
-    color: #FFEADB;
+    background-color: #22668D;
     font-family: sans-serif;
 }
 
@@ -42,11 +41,11 @@ h2, em {
     margin: 3px 0 12px 4px;
     padding: 7px;
     border-radius: 50px;
-    background-color: #FFEADB;
-    border: 7px solid #FF9A76;
+    background-color: #FF355D;
+    border: 7px solid #FFF5E0;
     font-family: sans-serif;
     font-weight: bolder;
-    color: #679B9B;
+    color: #FFD1DA;
 }
 
 #rnbo-parameter-sliders {
@@ -73,7 +72,7 @@ input[type="range"] {
     appearance: none; /* -webkit-appearance */
     width: auto;
     height: 70px;
-    background-color: #FF9A76;
+    background-color: #FFD1DA;
     border-radius: 7px;
 }
 
@@ -81,20 +80,20 @@ input[type="range"]::-webkit-slider-thumb {
     appearance: none;
     width: 70px;
     height: 70px;
-    background-color: #FFEADB;
-    border: 14px solid #637373;
+    background-color: #FFF5E0;
+    border: 14px solid #22668D;
     border-radius: 50%;
     cursor: grab;
     z-index: 3;
 }
 
 #gain {
-    background-color: #FFEADB;
+    background-color: #FFF5E0;
     margin-top: 34px;
 }
 
 #gain::-webkit-slider-thumb {
-    background-color: #FFEADB;
-    border: 14px solid #679B9B;
+    background-color: #FFF5E0;
+    border: 14px solid #FF355D;
     border-radius: 7px;
 }
