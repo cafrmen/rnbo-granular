@@ -155,7 +155,7 @@ function makeSliders(device) {
         });
         slider.addEventListener("pointerup", () => {
             isDraggingSlider = false;
-            slider.value = param.value; YO
+            slider.value = param.value; // YO
             text.value = param.value.toFixed(3); //CHECAR
         });
         slider.addEventListener("input", () => {
