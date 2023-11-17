@@ -6,15 +6,7 @@ html, body {
 }
 
 #rnbo-root {
-    height: 100vh;
-    width: 100vw;
-}
-#background {
-    position: absolute;
-    z-index: -1;
-}
-
-#rnbo-root {
+    position: relative;
     margin: auto;
     max-width: 540px;
 }
@@ -27,7 +19,17 @@ header {
 }
 
 main {
+    max-width: 540px;
+    height: 100vh;
     margin: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main>div {
+    width: 100%;
 }
 
 h2, em {
@@ -96,4 +98,21 @@ input[type="range"]::-webkit-slider-thumb {
     background-color: #FFF5E0;
     border: 14px solid #FF355D;
     border-radius: 7px;
+}
+
+@media screen and (max-width: 376px) {
+    .slider-container {
+        min-height: 55px;
+    }
+    input[type="range"] {
+        height: 55px;
+        margin-top: 0;
+    }
+    input[type="range"]::-webkit-slider-thumb {
+        width: 55px;
+        height: 55px;
+    }
+    #gain {
+        margin-top: 12px;
+    }
 }
